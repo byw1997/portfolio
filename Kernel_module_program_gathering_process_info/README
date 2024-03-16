@@ -1,0 +1,8 @@
+Environment
+- Ubuntu 22.04.3 LTS 64-bit
+
+In this program, the kernel has been modified, so you can find my code by searching "hw1" in kernel/core.c
+
+//hw1
+*My code here*
+//hw1
