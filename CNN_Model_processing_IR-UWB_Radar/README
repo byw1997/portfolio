@@ -1,0 +1,3 @@
+Learning IR-UWB radar data as image by CNN model and try to detect Fall Event.
+
+In real project, This program can't predict an event because of lack of data of fall.
