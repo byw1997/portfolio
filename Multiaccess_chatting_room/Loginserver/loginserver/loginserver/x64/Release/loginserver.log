@@ -1,0 +1,20 @@
+﻿  loginserver.cpp
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(135,62): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(148,57): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(173,71): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(179,61): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(224,55): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(232,55): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(242,63): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(255,55): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(265,73): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(270,87): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(310,65): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(351,61): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\loginserver\loginserver.cpp(385,71): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다.
+  21 of 917 functions ( 2.3%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    34 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  loginserver.vcxproj -> C:\Users\byw19\Documents\ServerPJ\Loginserver\loginserver\x64\Release\loginserver.exe
