@@ -1,0 +1,13 @@
+Environment
+- Windows 11 pro
+- Python 3.12.0
+
+My code is in pj_1.py, pj_2.py, pj_3.py.
+
+Find network device using ARP packet and get their IP address. 
+
+You can connect using IP address.
+
+You can send message, file by TCP and reliable UDP.
+
+*This program is university assignment for Computer Network.
