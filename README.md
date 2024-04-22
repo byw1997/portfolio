@@ -1,6 +1,6 @@
 Bae youngwoo
 
-[Tech Stacks]
+[Tech Stacks]\n
 -Python ~8 years
 -C++ ~ 3 years
 -C ~1 year
