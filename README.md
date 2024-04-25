@@ -28,3 +28,7 @@ Bae youngwoo
 -Socket Programming
 
 -System Programming
+
+[Instruction]
+
+Assignments and program developed by individual are contained in this repository.
