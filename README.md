@@ -16,12 +16,10 @@ Bae youngwoo
 
 -Linux ~2 years
 
--Unity Engine ~1 year
+-Unity Engine ~1 month
 
 
 [Skills]
-
--Object-Oriented Programming
 
 -Multi-Thread Programming
 
