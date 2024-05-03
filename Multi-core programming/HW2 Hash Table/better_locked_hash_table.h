@@ -8,6 +8,8 @@
 #include "hash_table.h"
 #include "bucket.h"
 
+#define LOCK_SIZE 50000
+
 class better_locked_probing_hash_table : public hash_table {
 
   private:
@@ -16,7 +18,7 @@ class better_locked_probing_hash_table : public hash_table {
 
     /* TODO: put your own code here  (if you need something)*/
     /****************/
-        std::mutex locks[5000000];
+        std::mutex locks[LOCK_SIZE];
 
         uint32_t hash2(uint32_t x){
                 x = ((x>>16) ^x)* 0x7feb352d;
@@ -105,25 +107,25 @@ class better_locked_probing_hash_table : public hash_table {
 
         uint64_t original = index;
 
-        locks[index%5000000].lock();
+        locks[index%LOCK_SIZE].lock();
          while(table[index].valid == true) {
                          if(table[index].key == key) {
                                  break;
                         } else {
-                                locks[index%5000000].unlock();
+                                locks[index%LOCK_SIZE].unlock();
                                 probe_count++;
                                 index = (index + step) % TABLE_SIZE;
                                 if(index == original){
                                         index = (index+1) % TABLE_SIZE;
                                         original = (original+1) % TABLE_SIZE;
                                 }
-                                locks[index%5000000].lock();
+                                locks[index%LOCK_SIZE].lock();
                                 if(probe_count >= TABLE_SIZE) return false;                             }
          }
         table[index].valid = true;
         table[index].key   = key;
         table[index].value = value;
-        locks[index%5000000].unlock();
+        locks[index%LOCK_SIZE].unlock();
         return true;
 
       /****************/
