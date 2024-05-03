@@ -40,7 +40,7 @@ help: output help message
 
 say : send to everyone (format: [YYYY-MM-DD HH:mm]nickname>> message)
 
-whisper : send to (format: [YYYY-MM-DD HH:mm] (whisper)nickname>> message / [YYYY-MM-DD HH:mm] (whisper)nickname<< message)
+whisper : send to target (format: [YYYY-MM-DD HH:mm] (whisper)nickname>> message / [YYYY-MM-DD HH:mm] (whisper)nickname<< message)
 
 users: output every user nickname currently logged in
 
