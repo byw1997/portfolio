@@ -14,9 +14,13 @@ Requirements
 
 -Need to create Database "host=localhost port=5432 dbname=serverpj user=dbadmin password=dbpassword" before test
 
--Need to update server ip address setting in client source code
+-Need to update server ip address setting in client source code (127.0.0.1 default. Only tested in local environment, single machine)
 
 .cpp route:Loginserver\loginserver\loginserver\loginserver.cpp, Client\client\client\client.cpp
+
+[]
+
+Every connections are TCP. (Messenger is sensitive to packet loss.)
 
 Every commands are case-insensitive.
 
