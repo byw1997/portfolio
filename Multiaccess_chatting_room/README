@@ -18,9 +18,14 @@ Requirements
 
 .cpp route:Loginserver\loginserver\loginserver\loginserver.cpp, Client\client\client\client.cpp
 
-[]
+Logics
 
-Every connections are TCP. (Messenger is sensitive to packet loss.)
+Server: 
+ 
+
+Details
+
+Every connections are established with TCP. (Messenger is sensitive to packet loss.)
 
 Every commands are case-insensitive.
 
