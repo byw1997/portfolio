@@ -25,7 +25,7 @@ Server:
 
 Details
 
-Every connections are established with TCP. (Messenger is sensitive to packet loss.)
+Every connections are established with TCP.
 
 Every commands are case-insensitive.
 
