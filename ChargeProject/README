@@ -1,5 +1,7 @@
 Scripts of 'Charge' project(WIP)
 
+Only scripts included.
+
 GameManager.cs
  - Game Manager instance(Singleton)
 PoolManager.cs
