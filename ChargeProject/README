@@ -4,6 +4,8 @@ Unity version: 2022.3.20f1
 
 Only scripts included.
 
+2024.06.24 ~ WIP
+
 GameManager.cs
  - Game Manager instance(Singleton)
 PoolManager.cs
