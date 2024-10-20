@@ -8,7 +8,10 @@ Only scripts included.
 
 Youtube Links:
 [Map generation and Loading Next stage](https://youtu.be/upcm6MUBsDw)
+
 [Playing Longsword and Dagger](https://youtu.be/Z2ogFtdLKyU)
+
+[Playing Sword and Staff](https://youtu.be/-WOeSFszERE)
 
 GameManager.cs
  - Game Manager instance(Singleton)
