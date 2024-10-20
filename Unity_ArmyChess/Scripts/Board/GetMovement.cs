@@ -501,16 +501,13 @@ public class GetMovement : MonoBehaviour
             
             if (x + 1 < 8 && y + 1 < 8)
             {
-                Debug.Log(x + "," + y +"!!");
                 ret2.Add(new int[] { x + 1, y + 1 });
                 if (board.squares[x + 1, y + 1].GetComponent<Square>().pieceOnSquare != null && board.squares[x + 1, y + 1].GetComponent<Square>().pieceOnSquare.GetComponent<Piece>().team != team)
                 {
-                    Debug.Log(x + "," + y + "!!!");
                     ret.Add(new int[] { x + 1, y + 1 });
                 }
                 else if (board.squares[x + 1, y + 1].GetComponent<Square>().pieceOnSquare == null && board.squares[x, y + 1].GetComponent<Square>().pieceOnSquare != null && board.squares[x, y + 1].GetComponent<Square>().pieceOnSquare.GetComponent<Pawn>() != null && board.squares[x, y + 1].GetComponent<Square>().pieceOnSquare.GetComponent<Pawn>().twoSquareAdvance == true)
                 {
-                    Debug.Log(x + "," + y + "!!!!" + board.squares[x, y + 1].GetComponent<Square>().pieceOnSquare.GetComponent<Pawn>().x + board.squares[x, y + 1].GetComponent<Square>().pieceOnSquare.GetComponent<Pawn>().y);
                     ret.Add(new int[] { x + 1, y + 1 });
                 }
             }

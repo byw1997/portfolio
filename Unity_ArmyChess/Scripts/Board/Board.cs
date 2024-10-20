@@ -31,9 +31,9 @@ public class Board : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         move = GetComponent<GetMovement>();
-        highlight = GetComponent<Highlight>();
         piecePlacer = GetComponent<PiecePlacer>();
         pieceManager = GetComponent<PieceManager>();
+        highlight = GetComponent<Highlight>();
     }
 
     // Update is called once per frame

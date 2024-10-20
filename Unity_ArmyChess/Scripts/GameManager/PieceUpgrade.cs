@@ -78,8 +78,11 @@ public class PieceUpgrade
         defense = 0;
         magic = 0;
         speed = 0;
+        Skill baseSkill = skills[0];
         skills.Clear();
+        skills.Add(baseSkill);
         skillLevel.Clear();
+        skillLevel.Add(0);
     }
 
     public void AddSoldier(int amount)

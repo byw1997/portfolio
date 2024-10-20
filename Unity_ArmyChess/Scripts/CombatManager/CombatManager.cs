@@ -92,6 +92,7 @@ public class CombatManager : MonoBehaviour
 
     public IEnumerator Activate(Piece white, Piece black, int attackerTeam, Square square)
     {
+        combatCamera.gameObject.SetActive(true);
         combatCamera.enabled = true;
         whiteSoldier = white.soldiers;
         blackSoldier = black.soldiers;
@@ -270,6 +271,7 @@ public class CombatManager : MonoBehaviour
     void Deactivate()
     {
         combatCamera.enabled = false;
+        combatCamera.gameObject.SetActive(false);
         RemoveSoldier();
         entireCommand.Clear();
         for(int i = 0; i < 3; i++)

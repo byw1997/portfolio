@@ -53,33 +53,41 @@ public class SkillManager : MonoBehaviour
 
     private void Awake()
     {
-        skillSelectButtons = new List<List<Button>>();
-        skillSelectButtons.Add(pawnButtons);
-        skillSelectButtons.Add(knightButtons);
-        skillSelectButtons.Add(bishopButtons);
-        skillSelectButtons.Add(rookButtons);
-        skillSelectButtons.Add(queenButtons);
+        skillSelectButtons = new List<List<Button>>
+        {
+            pawnButtons,
+            knightButtons,
+            bishopButtons,
+            rookButtons,
+            queenButtons
+        };
 
-        skillSelectButtonNames = new List<List<TMP_Text>>();
-        skillSelectButtonNames.Add(pawnButtonNames);
-        skillSelectButtonNames.Add(knightButtonNames);
-        skillSelectButtonNames.Add(bishopButtonNames);
-        skillSelectButtonNames.Add(rookButtonNames);
-        skillSelectButtonNames.Add(queenButtonNames);
+        skillSelectButtonNames = new List<List<TMP_Text>>
+        {
+            pawnButtonNames,
+            knightButtonNames,
+            bishopButtonNames,
+            rookButtonNames,
+            queenButtonNames
+        };
 
-        increaseButtons = new List<List<Button>>();
-        increaseButtons.Add(pawnIncreaseButtons);
-        increaseButtons.Add(knightIncreaseButtons);
-        increaseButtons.Add(bishopIncreaseButtons);
-        increaseButtons.Add(rookIncreaseButtons);
-        increaseButtons.Add(queenIncreaseButtons);
+        increaseButtons = new List<List<Button>>
+        {
+            pawnIncreaseButtons,
+            knightIncreaseButtons,
+            bishopIncreaseButtons,
+            rookIncreaseButtons,
+            queenIncreaseButtons
+        };
 
-        decreaseButtons = new List<List<Button>>();
-        decreaseButtons.Add(pawnDecreaseButtons);
-        decreaseButtons.Add(knightDecreaseButtons);
-        decreaseButtons.Add(bishopDecreaseButtons);
-        decreaseButtons.Add(rookDecreaseButtons);
-        decreaseButtons.Add(queenDecreaseButtons);
+        decreaseButtons = new List<List<Button>>
+        {
+            pawnDecreaseButtons,
+            knightDecreaseButtons,
+            bishopDecreaseButtons,
+            rookDecreaseButtons,
+            queenDecreaseButtons
+        };
 
         currentDecision = new List<List<int>>();
         for(int i = 0; i < 5; i++)
@@ -135,6 +143,7 @@ public class SkillManager : MonoBehaviour
                 upgrades[i].SkillLevel[j] += currentDecision[i][j];
             }
         }
+        GameManager.instance.skillPoint = skillPoint;
     }
 
     void AddSkillButtonListener(int i, int j)
@@ -219,6 +228,7 @@ public class SkillManager : MonoBehaviour
     {
         ClearCurrentDecision();
         notConfirmed = true;
+        skillDesc.text = "";
         RemoveSkillButtonListener();
     }
 

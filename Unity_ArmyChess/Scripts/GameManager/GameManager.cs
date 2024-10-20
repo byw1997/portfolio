@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Skill[] allSkills;
     Dictionary<int, Skill> skillDict = new Dictionary<int, Skill>();
 
-    [SerializeField] int skillPoint = 0;
+    public int skillPoint = 0;
 
     void Awake()
     {
@@ -201,17 +201,10 @@ public class GameManager : MonoBehaviour
         selectedRewards.Clear();
         rewardChoice = -1;
 
-        //Show Skill Management UI if skill point > 0 and wait for comfirm
+        //Show Skill Management UI if skill point > 0 and wait for confirm
         if(skillPoint > 0)
         {
             yield return StartCoroutine(skillManager.Activate(pieceUpgrades, skillPoint));
-
-            //Wait till all skill point used
-            //yield return new WaitUntil(() => skillPoint <= 0);
-
-            //Remove listeners and unshow UI
-            //RemoveSkillButtonListener();
-            //skillUI.SetActive(false);
         }
 
         //Call next stage
@@ -288,11 +281,17 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-
+        currentStage = 0;
+        foreach(var item in pieceUpgrades)
+        {
+            item.Clean();
+        }
     }
 
     public void RestartStage()
     {
         Debug.Log("Draw");
+        currentStage--;
+        NextStage();
     }
 }

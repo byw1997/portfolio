@@ -29,17 +29,29 @@ public class PieceManager : MonoBehaviour
     internal int[] whiteKingPos = new int[2];
     internal int[] blackKingPos = new int[2];
 
-    public List<List<GameObject>> whitePiece = new List<List<GameObject>>();
-    public List<List<GameObject>> blackPiece = new List<List<GameObject>>();
+    public List<List<GameObject>> whitePiece;
+    public List<List<GameObject>> blackPiece;
 
     void Awake()
     {
-        whitePiece.Add(whitePawn); blackPiece.Add(blackPawn);
-        whitePiece.Add(whiteKnight); blackPiece.Add(blackKnight);
-        whitePiece.Add(whiteBishop); blackPiece.Add(blackBishop);
-        whitePiece.Add(whiteRook); blackPiece.Add(blackRook);
-        whitePiece.Add(whiteQueen); blackPiece.Add(blackQueen);
-        whitePiece.Add(whiteKing); blackPiece.Add(blackKing);
+        whitePiece = new List<List<GameObject>>
+        {
+            whitePawn,
+            whiteKnight,
+            whiteBishop,
+            whiteRook,
+            whiteQueen,
+            whiteKing
+        };
+        blackPiece = new List<List<GameObject>>
+        {
+            blackPawn,
+            blackKnight,
+            blackBishop,
+            blackRook,
+            blackQueen,
+            blackKing
+        };
 
     }
 
