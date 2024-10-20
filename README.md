@@ -2,21 +2,21 @@ Bae youngwoo
 
 [Tech Stacks]
 
--Python ~8 years
+-Unity Engine & C# ~ 3 month
 
--C++ ~ 3 years
+-Python ~ 6 years
 
--C ~1 year
+-C++ ~ 2 years
 
--Rust ~1 year
+-C basic
 
--Java ~1 year
+-Rust basic
 
--PostgreSQL ~1 year
+-PostgreSQL basic
 
--Linux ~2 years
+-Linux
 
--Unity Engine ~1 month
+
 
 
 [Skills]
