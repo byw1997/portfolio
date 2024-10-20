@@ -47,6 +47,7 @@ Implemented Features
 
 2. Actions for Weapon
 Weapons are objects, and be set active when attack or charge called.
+
 2-1. Longsword
  - Attack: Swing from counter-clockwise 120 degree of mouse direction. Swing 180 degree.
  - Charge: Charge to mouse direction. Enemies are knockbacked to side.
