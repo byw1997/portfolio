@@ -8,23 +8,32 @@ Only scripts included.
 
 GameManager.cs
  - Game Manager instance(Singleton)
+
 PoolManager.cs
  - Manage Enemy Object Pooling
+
 Spawner.cs
  - Spawn enemy
+
 TestWeaponChanger.cs
  - Test script for weapon changing by trigger
+
 WeaponManager.cs
  - Manage Weapon UI
+
 MapGenerator.cs
  - Generate random map
 
+
 Characters/Player
  - Scripts for Player object action
+
 Characters/Weapon
  - Scripts for Weapon object action
+
 Characters/Enemy
  - Scripts for Enemy object action
+
 
 Implemented Features
 
