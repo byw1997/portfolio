@@ -37,7 +37,6 @@ static int hw1_seq_show(struct seq_file *s, void *v)
 {
     loff_t *spos = (loff_t *) v;
     seq_printf(s, "[System Programming Assignment #1]\n");
-    seq_printf(s, "ID: 2016147550\n");
     seq_printf(s, "Name: Bae, Youngwoo\n");
     seq_printf(s,"# CPU: %d\n", num_online_cpus());
     seq_printf(s,"--------------------------------------------------\n");
