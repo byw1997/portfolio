@@ -6,7 +6,7 @@ Only scripts included.
 
 2024.09.04 ~ 2024.9.14 / 2024.9.26 ~ WIP
 
-[Playing movie](https://youtu.be/c_92I434w34)
+Youtube link: [Playing movie](https://youtu.be/c_92I434w34)
 
 GameManager.cs
  - Game Manager instance(Singleton).
