@@ -16,6 +16,8 @@ TestWeaponChanger.cs
  - Test script for weapon changing by trigger
 WeaponManager.cs
  - Manage Weapon UI
+MapGenerator.cs
+ - Generate random map
 
 Characters/Player
  - Scripts for Player object action
