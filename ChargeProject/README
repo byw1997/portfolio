@@ -60,7 +60,7 @@ Weapons are objects, and be set active when attack or charge called.
  - If stage loaded, Map Generator instantiates random number of rooms from pre-made prefabs, including 'start room', 'shop room', 'boss room' for sure. 'Start room' is on (0,0,0) for sure.
  - Instantiated rooms are randomly spread in a small ellipse overlapped.
  - Each rooms spread wide by pre-defined collider for each.
- - When every rooms stop moving, find minimum spanning tree using kruskal algorithm.
+ - When every rooms stop moving, use delaunay triangulation to find closest rooms for each room, and find minimum spanning tree using kruskal algorithm.
  - Place tilemaps to connect rooms using datas of edges.
 
 5. Room
