@@ -6,6 +6,8 @@ Only scripts included.
 
 2024.06.24 ~ 2024.8.10
 
+[Map generation and Loading Next stage](https://youtu.be/upcm6MUBsDw)
+
 GameManager.cs
  - Game Manager instance(Singleton)
 
