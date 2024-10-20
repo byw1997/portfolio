@@ -10,37 +10,51 @@ Only scripts included.
 
 GameManager.cs
  - Game Manager instance(Singleton).
+
 PlayerControlHandler.cs
  - Get user input(click).
 
+
 Board.cs
  - Create chess board and manage squares.
+
 GetMovement.cs
  - Compute possible moves and attacking square for each piece.
+
 PiecePlacer.cs
  - Manage object pooling for pieces.
+
 PieceManager.cs
  - Manage Piece access by 2d List.
+ - 
 
 CombatManager.cs
  - Manage turn-based battle between pieces.
+
 SoldierLocation.cs
  - Manage soldier-placeable locations and activate object.
 
+
 RewardManager.cs
  - Manage Reward and UI after stage.
+
 SkillManager.cs
  - Manage Skill level and UI after reward.
 
+
 Square.cs
  - Manage informations of square.
+
 Piece.cs
  - Manage informations of piece.
 
+
 Soldier.cs
  - Manage soldier status.(not monobehaviour)
+
 Skill.cs
  - Stores informations of skill.(Scriptable Object)
+
 Reward.cs
  - Stores informations of Stage Clear Reward.(Scriptable Object)
 
