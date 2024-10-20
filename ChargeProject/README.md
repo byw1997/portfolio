@@ -50,15 +50,19 @@ Weapons are objects, and be set active when attack or charge called.
 2-1. Longsword
  - Attack: Swing from counter-clockwise 120 degree of mouse direction. Swing 180 degree.
  - Charge: Charge to mouse direction. Enemies are knockbacked to side.
+
 2-2. Dagger
  - Attack: Increase move speed, stamina regeneration. Set player untrackable to make enemies can't update player's position(stealth).
  - Charge: Charge to mouse direction. If collision occured, step back.
+
 2-3. Sword
  - Attack: Retain input for power charging. When input released, shoot sword aura(black triangle for test).
  - Charge: Retain input for power charging. When input released, Charge to mouse direction.
+
 2-4. Staff
  - Attack: Shoot bullet.
  - Charge: Make area of effect that slows and damage enemies. After delay, teleport to mouse location or mouse direction with max teleport distance.
+ - 
 
 3. Enemy
  - Enemy tracks player's position and move to the position.
