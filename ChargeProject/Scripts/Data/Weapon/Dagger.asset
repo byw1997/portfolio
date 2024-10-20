@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab7e4fff9e45a04685f4931f08d4206, type: 3}
+  m_Name: Dagger
+  m_EditorClassIdentifier: 
+  weaponid: 1
+  weapontype: 1
+  weaponname: Dagger
+  flavortext: 
+  attack_baseknockbackpower: 0
+  attack_baseknockbacktime: 0
+  attack_basedamage: 0
+  attack_basedelay: 6
+  attack_initialrotation: 0
+  attack_lengthdivider: 0
+  attack_speed: 0
+  attack_attacktime: 3
+  attack_prefab: {fileID: 4588352640827810595, guid: bbe0b6f84e4ce6b4da8c5a8117625d31, type: 3}
+  charge_baseknockbackpower: 0.2
+  charge_baseknockbacktime: 0.75
+  charge_basedamage: 125
+  charge_basedelay: 0.25
+  charge_chargetime: 0.05
+  charge_chargepower: 120
+  charge_prefab: {fileID: 6547379736144952768, guid: 062b49088474b714296874fcb4f223dd, type: 3}
