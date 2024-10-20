@@ -63,7 +63,6 @@ Weapons are objects, and be set active when attack or charge called.
 2-4. Staff
  - Attack: Shoot bullet.
  - Charge: Make area of effect that slows and damage enemies. After delay, teleport to mouse location or mouse direction with max teleport distance.
- - 
 
 3. Enemy
  - Enemy tracks player's position and move to the position.
