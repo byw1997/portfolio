@@ -9,7 +9,7 @@ Only scripts included.
 [Playing movie](https://youtu.be/c_92I434w34)
 
 GameManager.cs
- - Game Manager instance(Singleton)
+ - Game Manager instance(Singleton).
 PlayerControlHandler.cs
  - Get user input(click).
 
