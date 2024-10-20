@@ -26,7 +26,7 @@ PiecePlacer.cs
 
 PieceManager.cs
  - Manage Piece access by 2d List.
- - 
+
 
 CombatManager.cs
  - Manage turn-based battle between pieces.
