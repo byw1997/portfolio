@@ -6,6 +6,8 @@ Only scripts included.
 
 2024.06.24 ~ 2024.8.10
 
+Developed by individual.
+
 Youtube Links:
 
 [Map generation and Loading Next stage](https://youtu.be/upcm6MUBsDw)
