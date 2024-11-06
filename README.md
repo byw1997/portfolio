@@ -4,9 +4,9 @@ Bae youngwoo
 
 -Unity Engine & C# ~ 3 month
 
--Python ~ 6 years
+-Python ~ 8 years
 
--C++ ~ 2 years
+-C++ ~ 3 years
 
 -C basic
 
