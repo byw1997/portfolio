@@ -2,7 +2,7 @@ Bae youngwoo
 
 [Tech Stacks]
 
--Unity Engine & C# ~ 3 month
+-Unity Engine & C# ~ 5 month
 
 -Python ~ 8 years
 
