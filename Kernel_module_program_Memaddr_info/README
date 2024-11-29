@@ -1,4 +1,6 @@
 Environment
 - Ubuntu 22.04.3 LTS 64-bit
 
+This kernel module program gathers latest task memory information for every 10 seconds.
+
 *This program is assignment for System programming.
