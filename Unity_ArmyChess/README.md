@@ -1,5 +1,7 @@
 Scripts of 'ArmyChess' project(WIP)
 
+OS version: Windows 11 Pro
+
 Unity version: 2022.3.20f1
 
 Only scripts included.
