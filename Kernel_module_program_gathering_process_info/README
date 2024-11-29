@@ -1,7 +1,7 @@
 Environment
 - Ubuntu 22.04.3 LTS 64-bit
 
-This kernel module program gathers process information for each CPU.
+This kernel module program gathers process information for each CPU, by tracing schedule() function.
 
 My code is in hw1.c.
 
