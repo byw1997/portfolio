@@ -23,6 +23,8 @@ Bae youngwoo
 
 -Multi-Thread Programming
 
+-Cuda
+
 -Socket Programming
 
 -System Programming
