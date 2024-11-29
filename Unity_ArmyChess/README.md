@@ -4,7 +4,7 @@ OS version: Windows 11 Pro
 
 Unity version: 2022.3.20f1
 
-Scripts and Executable files included.
+Only scripts included.
 
 2024.09.04 ~ 2024.9.14 / 2024.9.26 ~ WIP
 
