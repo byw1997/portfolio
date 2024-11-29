@@ -63,7 +63,7 @@ Reward.cs
  - Stores informations of Stage Clear Reward.(Scriptable Object)
 
 
-No menu implemented yet.
+No menu implemented. Please exit with Alt+F4.
 
 In test play, Player plays both side.
 
