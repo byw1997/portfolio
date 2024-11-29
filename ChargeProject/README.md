@@ -100,3 +100,7 @@ Test Scene
  - If you have no weapon, main weapon will be set.
  - If you already have main weapon, sub weapon will be set.
  - If you already have two weapons, nothing happens.
+
+Known bugs
+- Spreading tilemaps doesn't work properly somtimes when new scene is loaded.
+- Some rooms don't get connected if its shape is too far from rectangle.
