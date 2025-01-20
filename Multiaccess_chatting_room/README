@@ -90,7 +90,7 @@ Every connections are established with TCP.
 
 Every commands are case-insensitive.
 
-No cryptography used.
+No cryptography implemented.
 
 Server accepts at most MAX_USERS_ONLINE(default = 10) clients.
 
