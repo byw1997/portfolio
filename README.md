@@ -14,20 +14,14 @@ Bae youngwoo
 
 -PostgreSQL basic
 
--Linux
-
 
 
 
 [Skills]
 
--Multi-Thread Programming
-
 -Cuda
 
 -Socket Programming
-
--System Programming
 
 [Instruction]
 
