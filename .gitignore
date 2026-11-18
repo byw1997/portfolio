@@ -1,0 +1,13 @@
+# build outputs
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.symvers
+*.order
+.*.cmd
+x64/
+*.vcxproj.user
+__pycache__/
+target/
