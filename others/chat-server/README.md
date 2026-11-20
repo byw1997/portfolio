@@ -1,0 +1,115 @@
+Multi-Access Chatting
+
+Developed by individual.
+
+Environment
+
+-Windows11 Pro
+
+-C++ Latest
+
+-PostgreSQL 15.4
+
+Youtube Link: https://youtu.be/x3wWCPwL6K8
+
+Requirements
+
+-pqxx(C++ library)
+
+-Need to create Database "serverpj" before test, and set its connection string to the environment variable CHAT_DB_CONN (e.g. "host=localhost port=5432 dbname=serverpj user=... password=...")
+
+-Need to update server ip address setting in client source code (127.0.0.1 default. Only tested in local environment, single machine)
+
+
+.cpp route:Loginserver\loginserver\loginserver\loginserver.cpp, Client\client\client\client.cpp
+
+
+Logics
+
+-Server: 
+
+1. Initialize variables and create PostgreSQL DB tables if doesn't exist. 
+
+2. Call WSAStartup to start socket program.
+
+3. Create Socket descriptor.
+
+4. Bind socket and listen.
+
+5. Create thread with function "connect_client" and detach for client connection. Main thread starts to get server side user input. 
+"users": get online users list. 
+"exit": exit server.
+
+6. Detached thread accepts client connection while online_user_number < MAX_USER_ONLINE.
+
+7. If connection established, send client its slot number and create new thread with function "recv_from_client" to get client request and detach it.
+
+8. Detached thread processing client request handle client command, "login", "signup", "exit", "say", "whisper".
+
+9. "login": get client input id and input password through TCP connection, and call "get_user_id" to check DB. If there is valid ID-number for user input, get user nickname and store it to user nickname array and send 10 recent messages to client with welcome message.
+
+"signup": Call "signup" function. "signup" function check DB with user input id/password/nickname. If one of those is duplicated, signup fails and client receives failure message. Else, generate random user ID-number and insert user information to DB.
+
+"say": Call "say" function. Get user input and send message to everyone in server.
+
+"whisper": Call "whisper" function. Get user input and send message to user with entered nickname.
+
+"exit": Disconnect user.
+
+-Client:
+
+1. Call WSAStartup to start socket program.
+
+2. Create Socket descriptor.
+
+3. Connect to server. (IP_ADDR / PORT)
+
+4. If connection established, get user input. "login", "signup", "exit". 
+
+"login": Call function "login". Get user input id and password, and send to server. Get server response message and output result.
+
+"signup": Call funtion "signup". Get user input id and password and nickname, and send to server. Get server response and output result.
+
+"exit": Exit client.
+
+5. If successfully logged in, create new thread with function "recv_from_server" to get message from sever and detach it. Main thread starts to get user input.
+
+"help": Output help message.
+
+"say <message>": Send <message> to everyone in server.
+
+"whisper <target> <message>": Send <message> to <target>.
+
+"users": Get users list online.
+
+"exit": Exit client.
+
+Details
+
+Every connections are established with TCP.
+
+Every commands are case-insensitive.
+
+No cryptography implemented.
+
+Server accepts at most MAX_USERS_ONLINE(default = 10) clients.
+
+client tries to connect to server socket. If fail to connect, Enter R to retry, Enter E to exit.
+
+If success to make connection, Enter signup to make account. Enter E to exit. Loop while input is Exit or success login.
+
+If signup entered, Get ID, password, Nickname as input. Server checks ID, Nickname duplication by checking database. If more than 0 column checked, signup fails and notice client the reason why signup failed.
+
+If login entered, Get ID, password as input. Check database and get column corresponding to the input. If none, login fails. And if the user_id in column corresponding to input already logged in, login fails.
+
+If successfully logged in, client gets welcome message and recent 10 messages and get user command as input. These are user commands.
+
+help: output help message
+
+say : send to everyone (format: [YYYY-MM-DD HH:mm]nickname>> message)
+
+whisper : send to target (format: [YYYY-MM-DD HH:mm] (whisper)nickname>> message / [YYYY-MM-DD HH:mm] (whisper)nickname<< message)
+
+users: output every user nickname currently logged in
+
+exit: terminate
