@@ -25,3 +25,7 @@ Multi-core GPU Programming（2024年春）課題2「To lock or Not to lock」。
 ## 備考
 
 2つ目のハッシュ関数には、公開されている hash function prospector の関数を使った（レポートに出典を記載）。ソースコードはこのリポジトリにまだ収録していない。
+
+## レポート
+
+[report.pdf](report.pdf)
