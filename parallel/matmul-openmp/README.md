@@ -23,3 +23,7 @@ Multi-core GPU Programming（2024年春）課題3。C++、OpenMP。
 ## 備考
 
 ソースコードはこのリポジトリにまだ収録していない。
+
+## レポート
+
+[report.pdf](report.pdf)

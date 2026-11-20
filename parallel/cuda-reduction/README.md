@@ -25,3 +25,7 @@ Multi-core GPU Programming（2024年春）課題5。CUDA。
 ## 備考
 
 ソースコードはこのリポジトリにまだ収録していない。
+
+## レポート
+
+[report.pdf](report.pdf)
